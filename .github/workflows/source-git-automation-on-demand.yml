@@ -16,7 +16,6 @@ permissions:
 jobs:
   # Get all open PRs
   gather-pull-requests:
-    if: github.repository == 'redhat-plumbers/systemd-rhel9'
     runs-on: ubuntu-latest
 
     outputs:
