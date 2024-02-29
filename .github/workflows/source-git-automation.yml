@@ -38,7 +38,7 @@ jobs:
 
     steps:
       - name: Source-git Automation
-        uses: redhat-plumbers-in-action/source-git-automation@v1
+        uses: jamacku/source-git-automation@main
         with:
           pr-metadata: ${{ needs.download-metadata.outputs.pr-metadata }}
           bugzilla-api-token: ${{ secrets.BUGZILLA_API_TOKEN }}
