@@ -12,8 +12,7 @@ jobs:
   download-metadata:
     if: >
       github.event.workflow_run.event == 'pull_request' &&
-      github.event.workflow_run.conclusion == 'success' &&
-      github.repository == 'redhat-plumbers/systemd-rhel9'
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     outputs:
